@@ -1,6 +1,6 @@
 package com.example.springbootredissingledemo.commom.config;
 
-import com.example.springbootredissingledemo.commom.base.service.RedisCacheService;
+import com.example.springbootredissingledemo.commom.service.RedisCacheService;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;

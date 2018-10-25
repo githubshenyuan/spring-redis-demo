@@ -1,4 +1,4 @@
-package com.example.springbootredissingledemo.commom.base.service;
+package com.example.springbootredissingledemo.commom.service;
 
 import org.springframework.data.redis.core.RedisTemplate;
 
