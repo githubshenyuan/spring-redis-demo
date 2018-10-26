@@ -13,6 +13,7 @@
         <module>springboot-redis-single-demo</module>
         <module>springboot-redis-cluster-demo</module>
         <module>redis-single-demo</module>
+        <module>spring-redis-single-demo</module>
     </modules>
 
 </project>
