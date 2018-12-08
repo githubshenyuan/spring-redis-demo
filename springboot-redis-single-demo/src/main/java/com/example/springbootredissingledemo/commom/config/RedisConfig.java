@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
@@ -14,6 +15,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
  * @author sh on 2018/10/9
  * @version ideaIU-2017.2.5.win
  */
+@Configuration
 public class RedisConfig {
 
     /**
@@ -36,19 +38,6 @@ public class RedisConfig {
         return redisTemplate;
     }
 
-    /**
-     *
-     * @param redisTemplate
-     * @param redisTemplateObject
-     * @return
-     */
-    RedisCacheService getRedisCacheService(RedisTemplate<String,String> redisTemplate,
-                                           RedisTemplate<String,Object> redisTemplateObject){
-        RedisCacheService redisCacheService = new RedisCacheService();
-        redisCacheService.setRedisTemplate(redisTemplate);
-        redisCacheService.setRedisTemplateObject(redisTemplateObject);
 
-        return redisCacheService;
-    }
 
 }
